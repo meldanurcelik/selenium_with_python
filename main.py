@@ -13,6 +13,7 @@ if "useinsider.com" in link:
     print('doğru sayfadayız : ' + link)
 
 # şuanki pencereyi kapatır
-driver.close()
+# driver.close()
 
-# driver.quit() seleniumun kullandığı tüm pencereleri kapatır
+# seleniumun kullandığı tüm pencereleri kapatır
+driver.quit()

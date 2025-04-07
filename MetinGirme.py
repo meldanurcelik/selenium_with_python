@@ -1,10 +1,8 @@
 from selenium import webdriver
-from selenium.webdriver import Keys
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 
 service = Service("./chromedriver-win64/chromedriver.exe")
 driver = webdriver.Chrome(service=service)
@@ -18,4 +16,4 @@ aramakutusu.send_keys("selenium")
 driver.find_element(By.CSS_SELECTOR, ".iconButton_button__A_Uiu.searchbox_searchButton__LxebD").click()
 driver.find_element(By.ID, "r1-2").click()
 
-time.sleep(10)
+driver.quit()
